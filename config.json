@@ -158,7 +158,8 @@
     "keyedit_move": true,
     "quicksettings_list": [
         "sd_model_checkpoint",
-        "sd_vae"
+        "sd_vae",
+        "sd_lora"
     ],
     "ui_tab_order": [],
     "hidden_tabs": [],
