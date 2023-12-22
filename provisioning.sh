@@ -28,6 +28,7 @@ EXTENSIONS=(
     "https://github.com/Coyote-A/ultimate-upscale-for-automatic1111"
     #"https://github.com/fkunn1326/openpose-editor"
     "https://github.com/Gourieff/sd-webui-reactor"
+    "https://github.com/BlafKing/sd-civitai-browser-plus"
 )
 
 CHECKPOINT_MODELS=(
@@ -107,6 +108,16 @@ function provisioning_start() {
     fi
     PROVISIONING_FLAGS="--skip-python-version-check --no-download-sd-model --do-not-download-clip --port 11404 --exit"
     FLAGS_COMBINED="${PLATFORM_FLAGS} $(cat /etc/a1111_webui_flags.conf) ${PROVISIONING_FLAGS}"
+
+    # --- INIZIO DEL MIO CODICE --- #
+    printf "\n--- INIZIO DEL MIO CODICE ---\n"
+    cd /opt/stable-diffusion-webui
+    wget "https://raw.githubusercontent.com/neoentest2/my_a1111/main/config.json"
+    wget https://github.com/neoentest2/my_a1111/raw/main/notification.mp3
+    cd ..
+    cd ..
+    printf "\n--- FINE DEL MIO CODICE ---\n"
+    # ----------------------------- #
     
     # Start and exit because webui will probably require a restart
     cd /opt/stable-diffusion-webui && \
