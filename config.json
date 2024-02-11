@@ -159,7 +159,8 @@
     "quicksettings_list": [
         "sd_model_checkpoint",
         "sd_vae",
-        "sd_lora"
+        "sd_lora",
+        "CLIP_stop_at_last_layers"
     ],
     "ui_tab_order": [],
     "hidden_tabs": [],
