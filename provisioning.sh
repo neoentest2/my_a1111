@@ -36,12 +36,12 @@ CHECKPOINT_MODELS=(
     #"https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.ckpt"
     #"https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors"
     #"https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0.safetensors"
-    https://civitai.com/api/download/models/782002?type=Model&format=SafeTensor&size=full&fp=fp16
+    "https://civitai.com/api/download/models/782002?type=Model&format=SafeTensor&size=full&fp=fp16"
 )
 
 LORA_MODELS=(
     #"https://civitai.com/api/download/models/16576"
-    https://civitai.com/api/download/models/132359?type=Model&format=SafeTensor
+    "https://civitai.com/api/download/models/132359?type=Model&format=SafeTensor"
 )
 
 VAE_MODELS=(
