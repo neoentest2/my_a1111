@@ -130,6 +130,7 @@ function provisioning_start() {
         micromamba run -n webui -e LD_PRELOAD=libtcmalloc.so python launch.py \
             ${ARGS_COMBINED}
     fi
+    wget https://github.com/neoentest2/my_a1111/raw/main/notification.mp3 
     provisioning_print_end
 }
 
